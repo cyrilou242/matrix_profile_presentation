@@ -106,6 +106,8 @@ def compute_matrix_profile(isRow):
             df1.iloc[st.session_state.current_index, st.session_state.current_compared_index] = color
         return df1
 
+    # TODO COLOR index and columns with green/red like in the grapg
+
     col2.write(pd.DataFrame(st.session_state.distances_matrix)
                .replace(np.inf, EMPTY_SPACE)
                .style
