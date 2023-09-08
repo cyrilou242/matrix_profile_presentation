@@ -9,7 +9,7 @@ series_A = np.sin(time)
 # small distance
 series_B = np.sin(time - 0.001) + 0.5  # Adjust the equation for Time Series B
 # big distance - uncomment to generate
-#series_B = np.cos(time - 0.001) + 0.5  # Adjust the equation for Time Series B
+#series_B = np.random.random(series_A.size)
 
 # Calculate Euclidean distances
 euclidean_distances = np.sqrt((series_A - series_B) ** 2)
